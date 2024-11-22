@@ -2,7 +2,7 @@ const container = document.querySelector('.container');
 
 document.addEventListener('mousemove', (event) => setTimeout(() => {
     const xAxis = -(window.innerWidth / 2 - event.clientX) / 80;
-    const yAxis = (window.innerHeight / 2 - event.clientY) / 20;
+    const yAxis = (window.innerHeight / 2 - event.clientY) / 40;
     container.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 }));
 
